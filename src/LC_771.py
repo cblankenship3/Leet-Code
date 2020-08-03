@@ -7,4 +7,3 @@ The letters in J are guaranteed distinct, and all characters in J and S are lett
 Letters are case sensitive, so "a" is considered a different type of stone from "A"
 @author: chrbl
 '''
-do studff
