@@ -35,7 +35,7 @@ else:
     Theory behind the solution: 
     I made a new list on line 19, we could have changed 'nums' to save space, however I wanted to keep inputs and 
     outputs differentiated.
-    After assigning the value at the first index of nums I'm able to us result[-1] in infinitum, though this results
+    After assigning the value at the first index of nums I'm able to use result[-1] in infinitum, though this results
     in the iteration of nums with an offset of 1
     This is O(n) as the solution is limited by and only by the amount of numbers in a given list.
     This could be done with a while loop which may make for a slightly simpler solution, I ran this in Leetcode and got the 
