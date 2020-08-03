@@ -31,7 +31,7 @@ else:
     print(False)
 
 ''' This solution was successful on LeetCode. Used lines 19-22 (the rest was for working/testing locally and not in browser)
-    Lines 4, Runtime: 40ms, Memory: 14.2MB, Time Complexity: O(n)
+    Lines: 4, Runtime: 40ms, Memory: 14.2MB, Time Complexity: O(n)
     Theory behind the solution: 
     I made a new list on line 19, we could have changed 'nums' to save space, however I wanted to keep inputs and 
     outputs differentiated.
