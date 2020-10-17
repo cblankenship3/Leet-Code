@@ -17,7 +17,9 @@ s = "aAAbbbb"
 
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
-        return 3
+        jMap = set(J)   #for this example this is equal to "jMap = {"a","A"}" just 
+                        #faster than looping through each element and adding to jMap
+        return sum([i in jMap for i in S])
             
 #From here down is purely testing the example given to see if we have a solution 
 #The left side of the expression is our result, the right side is the correct result
@@ -28,14 +30,13 @@ if (sol.numJewelsInStones(j,s) == 3):
 else:
     print(False)
 
-''' This solution was successful on LeetCode. Used lines 19-22 (the rest was for working/testing locally and not in browser)
-    Lines: 4, Runtime: 40ms, Memory: 14.2MB, Time Complexity: O(n)
+''' This solution was successful on LeetCode. Used lines 20-22 (the rest was for working/testing locally and not in browser)
+    Lines: 2, Runtime: 24ms, Memory: 14.2MB, Time Complexity: O(n)/O(m+n)
     Theory behind the solution: 
-    I made a new list on line 19, we could have changed 'nums' to save space, however I wanted to keep inputs and 
-    outputs differentiated.
-    After assigning the value at the first index of nums I'm able to use result[-1] in infinitum, though this results
-    in the iteration of nums with an offset of 1
-    This is O(n) as the solution is limited by and only by the amount of numbers in a given list.
-    This could be done with a while loop which may make for a slightly simpler solution, I ran this in Leetcode and got the 
-    same runtime and space stats as the for loop shown here.
+    Line 20 I made a set out of the jewel list. Any type of hash-based collection will work here.
+    Line 22 we return the sum of where we find a jewel match. look for every instance of jMap[1], then jMap[2],... jMap[n] in S, 
+    if a match is found, the function adds one to a running sum.
+    This is O(n+m) as the solution is limited by and only by the amount of numbers in a given Jewel list and Stones List.
+    Using a hash-based collection and the functions on it allow for a O(1) search on O(n) elements. We add O(m) for filling our 
+    set with the Jewels list.
 '''
