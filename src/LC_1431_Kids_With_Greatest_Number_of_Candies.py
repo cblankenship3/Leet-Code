@@ -50,6 +50,7 @@ else:
     loop back through adding 'extraCandies'. If the number is higher with extraCandies, then that index in our returned list
     must be true.
     This is O(n) as the solution is limited by both the max function (O(n)) and searching through the for loop to determine how many 
-    total candies a kid may have.
+    total candies a kid may have. I do not believe we can get any better time complexity out of this as we must match index
+    to index the candy list and the return list with logic applied to each element.
     
 '''
