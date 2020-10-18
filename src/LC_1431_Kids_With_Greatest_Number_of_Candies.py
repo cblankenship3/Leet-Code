@@ -44,7 +44,7 @@ else:
     print(False)
 
 ''' This solution was successful on LeetCode. Used lines 28-35 (the rest was for working/testing locally and not in browser)
-    Lines: 2, Runtime: 40ms, Memory: 14.2MB, Time Complexity: O(n)
+    Lines: 8, Runtime: 40ms, Memory: 14.2MB, Time Complexity: O(n)
     Theory behind the solution: 
     I read the description and figured would find the max value in our candies array, then use that number to compare to when we
     loop back through adding 'extraCandies'. If the number is higher with extraCandies, then that index in our returned list
