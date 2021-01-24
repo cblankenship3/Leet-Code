@@ -37,7 +37,7 @@ else:
     
     
 ''' This solution was successful on LeetCode. Used lines 24-27 (the rest was for working/testing locally and not in browser)
-    Lines: 4, Runtime: 52ms, Memory: 14.5MB, Time Complexity: O(nLogn)
+    Lines: 4, Runtime: 52ms, Memory: 14.5MB, Time Complexity: O(n^2)
     Theory behind the solution: 
     I decided to add each number to each number to its 'right' in the array. This allows me to check every number against every other
     number and not having to repeat using the commutative property of addition. This is the brute force method for solving this
