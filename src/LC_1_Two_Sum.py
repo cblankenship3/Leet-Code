@@ -40,9 +40,9 @@ else:
     Lines: 4, Runtime: 52ms, Memory: 14.5MB, Time Complexity: O(nLogn)
     Theory behind the solution: 
     I decided to add each number to each number to its 'right' in the array. This allows me to check every number against every other
-    number and not having to repeat using the commutative property of addition means we can do faster than O(n^2)
-    This is O(nLogn) as the solution takes O(n) time to look through each initial number and takes O(logn) to look through each
-    number remaining in the list. I can confidently say O(logn) as the second for loop uses the variable from the for loop
-    prior    
+    number and not having to repeat using the commutative property of addition. This is the brute force method for solving this
+    problem and we can do better.
+    This is O(n^2) as the solution takes O(n) time to look through each initial number and takes O(n) to look through each
+    number remaining in the list. 
 '''   
     
